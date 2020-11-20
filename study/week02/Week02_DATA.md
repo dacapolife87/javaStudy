@@ -85,7 +85,6 @@ char는 char는 초기화를  '\u0000'으로 사용
 - 자바의 프리미티브타입에 바로 초기화하는 값 그 자체가 리터럴 이라고 정리를 하였다.
 
 <pre>
-
 int intTypeValue = 1;
 long longTypeValue = 1L;
 float floatTypeValue = 1.0f;
@@ -93,7 +92,6 @@ double doubleTypeValue = 1.0;
 char charTypeValue = 'a';
 boolean booleanTypeValue = true;
 String stringTypeValue = "String";
-
 </pre>
 
 ---
@@ -101,10 +99,8 @@ String stringTypeValue = "String";
 ### 변수 선언 및 초기화하는 방법
 
 <pre>
-
 int declaredValue;   // 변수를 선언
 declaredValue = 10;  // declaredValue 변수에 10으로 초기화
-
 </pre>
 
 변수를 선언하는 방법은 선언할 변수의 타입과 변수명을 지정하면 된다.
@@ -117,7 +113,6 @@ declaredValue = 10;  // declaredValue 변수에 10으로 초기화
 ### 변수의 스코프와 라이프타임
 
 <pre>
-
 public class VariableExample {
 
     int instanceVariable = 1000; // 인스턴스변수
@@ -127,7 +122,6 @@ public class VariableExample {
         int localVariable = 10; // 지역변수
     }
 }
-
 </pre>
 
 변수의 타입은 3종류
@@ -143,11 +137,18 @@ public class VariableExample {
   - Scope : 선언된 블록안에서 존재 -> 중괄호 { }  이 범위안에서 존재
   - lifetime : 선언된 블록(중괄호의 범위내)에서 살아 있다
 
+![Alt text](./img/variavleScope.JPG)
+
+[출처] learningjournal.guru <https://www.learningjournal.guru/article/programming-in-java/scope-and-lifetime-of-a-variable/>
+
 ---
 
-
 ### 타입 변환, 캐스팅 그리고 타입 프로모션
+
+---
  
 ### 1차 및 2차 배열 선언하기
+
+---
  
 ### 타입 추론, var
