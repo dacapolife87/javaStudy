@@ -288,17 +288,28 @@ System.out.println("2차원 배열 접근 1번 배열의 두번째값 : "+array2
  
 ### 타입 추론, var
 
+javascript를 사용하면서 접하였던 var... 이 var가.. 자바에 온줄은 지금까지 모르고 있었다..
+하긴 지금까지 Java8에서 벗어나질 못하고 있으니...(1.6을 사용하는 프로젝트도 아직...존재하는상황)
 
-
-
-<pre>
-
-</pre>
-
-
+var는 java10부터 지원하는 기능으로 초기화된 데이터를 보고 컴파일러가 해당 변수의 타입을 판단하는 기능이다.
 
 <pre>
+var intValue = 10;
+int intValue2 = 20;
 
+int newIntValue = intValue + intValue2;
+
+System.out.println("10 + 20 : "+newIntValue);
+
+var stringValue = "IsvarType";
+String stringValue2 = "Yes!";
+
+String newStringValue = stringValue + stringValue2;
+
+System.out.println("typeVar : " + newStringValue);
 </pre>
 
+newIntValue는 var타입의 intValue와 int타입의 intValue2 를 더하기 연산으로 30을 출력하게된다.
+
+![Alt text](./img/typeVar.JPG)
 
