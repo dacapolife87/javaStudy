@@ -258,12 +258,47 @@ ArrayIndexOutOfBoundsException 이 발생한다.
 
 ![Alt text](./img/outOfBounds.JPG)
 
-<pre></pre>
-<pre></pre>
 
+- 2차 배열을 생성하는 방법
+<pre>
+int[][] array2By2_1 = new int[2][2];
+int[][] array2By2_2 = {{1,2},{3,4}};
+</pre>
 
+2차원 배열의 선언은 배열의 크기만큼 [] 갯수를 추가하면된다.
 
+![Alt text](./img/2by2Array.JPG)
+
+배열의 접근 방법 역시 해당 배열방의 주소를 지정하면된다.
+<pre>
+System.out.println("2차원 배열 접근 0번 배열의 첫번째값 : "+array2By2_2[0][0]);
+System.out.println("2차원 배열 접근 1번 배열의 두번째값 : "+array2By2_2[1][1]);
+
+System.out.println("배열의 값 변경");
+array2By2_2[1][1] = 10;
+
+System.out.println("2차원 배열 접근 1번 배열의 두번째값 : "+array2By2_2[1][1]);
+</pre>
+
+![Alt text](./img/2by2DataSet.JPG)
+
+2차원 배열의 접근 및 데이터 수정
 
 ---
  
 ### 타입 추론, var
+
+
+
+
+<pre>
+
+</pre>
+
+
+
+<pre>
+
+</pre>
+
+
