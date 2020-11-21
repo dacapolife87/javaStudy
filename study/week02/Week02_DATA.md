@@ -198,6 +198,72 @@ double형인 doubleValue를 int로 형변환한다고 명시해주면 int형으�
  
 ### 1차 및 2차 배열 선언하기
 
+- 1차 배열을 생성하는 방법
+<pre>
+int[] intValueArray1 = new int[5];
+int []intValueArray2 = new int[10];
+int intValueArray3[] = new int[15];
+</pre>
+
+선언하려는 배열의 타입과 [] (대괄호)를 사용하여 베열의 변수를 선언하고 크기를 지정해주면 배열이 생성된다.
+
+<pre>
+System.out.println("intValueArray1 Length = " + intValueArray1.length);
+System.out.println("intValueArray2 Length = " + intValueArray2.length);
+System.out.println("intValueArray3 Length = " + intValueArray3.length);
+</pre>
+
+배열의 크기를 확인해보면
+
+![Alt text](./img/arraySize.JPG)
+
+생성할때 지정된 크기만큼생성되것을 확인할수 있다.
+
+- 1차 배열을 선언하는 또 다른 방법
+
+<pre>
+int[] anotherArray = {1,2,3,4,5};
+</pre>
+
+중괄호를 사용하여 해당 타입의 데이터를 넣어주면 입력한 데이터 만큼 배열이 생성되어 초기화가 된다.
+
+<pre>
+System.out.println("anotherArrayLength = " + anotherArray.length);
+</pre>
+
+- 배열에 접근하는 방법
+<pre>
+intValueArray1[0] = 7;
+intValueArray1[1] = 6;
+intValueArray1[2] = 10;
+intValueArray1[3] = 2;
+intValueArray1[4] = 5;
+</pre>
+
+배열의 번지수는 0부터 시작하며 배열의 크기 -1 까지의 주소를 가진다.
+
+![Alt text](./img/arraySetData.JPG)
+
+<pre>
+try {
+    System.out.println("intValueArray1 Length = " + intValueArray1.length);
+    intValueArray1[5] = 8;
+} catch (Exception e) {
+    System.out.println("배열 크기 초과!");
+    e.printStackTrace();
+}
+</pre>
+배열의 크기를 초과한 배열방에 접근하려는 경우
+ArrayIndexOutOfBoundsException 이 발생한다.
+
+![Alt text](./img/outOfBounds.JPG)
+
+<pre></pre>
+<pre></pre>
+
+
+
+
 ---
  
 ### 타입 추론, var
