@@ -145,6 +145,53 @@ public class VariableExample {
 
 ### 타입 변환, 캐스팅 그리고 타입 프로모션
 
+- 자동형변환이란?
+자동형변환은 어떤 자료형이 다른 자료형으로 자동으로 데이터 타입이 변경되는것을 말한다.
+예를 들어
+<pre>
+int intValue = 10;
+System.out.println("intValue = " + intValue);
+
+double castingIntValue = intValue;
+System.out.println("castingIntValue = " + castingIntValue);
+</pre>
+위와 같은 코드에서 처음에 intValue에 10으로 초기화를 한뒤 이 값을 double형인 castingIntValue변수에 넣어보자
+
+결과는 다음과 같다
+![Alt text](./img/TypeCasting.JPG)
+
+10이라는 정수가 10.0 으로 변경되었다.
+이런것이 자동형변환이다.
+
+<pre>
+byte(1) < short(2) < int(4) < long(8) < float(4) < double(8)
+</pre>
+자동형변환은 다음과 같은 순서로 작은것부터 큰것으로 변환된다.
+
+단 long에서 float은 예외인데...
+이유는 
+long : -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 
+float : 3.4 * 10^-38  ~ 3.4 * 10^38
+float의 데이터 표현범위가 더 크기 때문에 float이 더 큰타입으로 들어간다.  
+
+- 강제형변환
+강제형변환은 말그대로 강제로 데이터형을 변환하는것이다.
+<pre>
+double doubleValue = 100.5;
+System.out.println("doubleValue = " + doubleValue);
+int intValue = doubleValue; // 컴파일 에러
+</pre>
+double이 데이터 크기가 더 크기때문에 컴파일 에러가 발생한다.
+
+강제형변환 하는 방법은 변환할 자료형타입을 지정해주면된다.
+<pre>
+double doubleValue = 100.5;
+System.out.println("doubleValue = " + doubleValue);
+int intValue = (int) doubleValue; 
+</pre>
+double형인 doubleValue를 int로 형변환한다고 명시해주면 int형으로 변환한다. 
+![Alt text](./img/forceCasting.JPG)
+
 ---
  
 ### 1차 및 2차 배열 선언하기
