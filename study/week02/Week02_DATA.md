@@ -158,6 +158,7 @@ System.out.println("castingIntValue = " + castingIntValue);
 위와 같은 코드에서 처음에 intValue에 10으로 초기화를 한뒤 이 값을 double형인 castingIntValue변수에 넣어보자
 
 결과는 다음과 같다
+
 ![Alt text](./img/TypeCasting.JPG)
 
 10이라는 정수가 10.0 으로 변경되었다.
@@ -190,6 +191,7 @@ System.out.println("doubleValue = " + doubleValue);
 int intValue = (int) doubleValue; 
 </pre>
 double형인 doubleValue를 int로 형변환한다고 명시해주면 int형으로 변환한다. 
+
 ![Alt text](./img/forceCasting.JPG)
 
 ---
