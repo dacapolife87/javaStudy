@@ -7,18 +7,18 @@ public class TypeVariable {
     }
 
     private void typeVar() {
-        var intValue = 10;
+//        var intValue = 10;
         int intValue2 = 20;
 
-        int newIntValue = intValue + intValue2;
+//        int newIntValue = intValue + intValue2;
 
-        System.out.println("10 + 20 : "+newIntValue);
-
-        var stringValue = "IsvarType";
+//        System.out.println("10 + 20 : "+newIntValue);
+//
+//        var stringValue = "IsvarType";
         String stringValue2 = "Yes!";
 
-        String newStringValue = stringValue + stringValue2;
+//        String newStringValue = stringValue + stringValue2;
 
-        System.out.println("typeVar : " + newStringValue);
+//        System.out.println("typeVar : " + newStringValue);
     }
 }
