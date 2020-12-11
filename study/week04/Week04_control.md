@@ -10,11 +10,11 @@
 ---
 
 ### 선택문
-Java에서 선택문의 종류는 if~eles 와 switch~case문 2개가 있다.
+Java에서 선택문의 종류는 'if-eles' 와 'switch-case'문 2개가 있다.
 
-그럼 먼저 if~else부터 알아보자
+그럼 먼저 if-else부터 알아보자
  
- - if~else
+ - if-else
  > if 만약 @@ 한다면.. 떙떙 할것이다....
 
 중고등학교 다닐때 영어시간에 많이 듣던 말이다..
@@ -68,11 +68,11 @@ if( mathScore >= 90 ) {
 <pre>else if (조건문)</pre> 
 을 추가함으로서 여러 조건을 추가할수 있다.
 
-- switch~case
+- switch-case
 
-switch~case문 역시 if~else문과 비슷한 역할을 한다.
+switch-case문 역시 if-else문과 비슷한 역할을 한다.
 
-switch~case문의 간단한 예제를 통해 살펴보자
+switch-case문의 간단한 예제를 통해 살펴보자
 <pre>
 String season = "winter";
 switch (season) {
@@ -144,7 +144,7 @@ break를 사용안하면 해당 조건부터 그 이후의 조건은 다처리�
 
 ### 반복문
 
-Java의 반복문은 while , do~while, for 이렇게 3종류가 있다
+Java의 반복문은 while , do-while, for 이렇게 3종류가 있다
 
 - while문
 <pre>
@@ -161,14 +161,14 @@ while문은 반복조건의 검사 -> 반복영역 실행 -> 다시 반복조건
 > 1. 반복조건을 먼저 감사 한 후에 반복영역의 실행여부를 결정한다.
 > 2. 반복조건을 먼저 검사하기 때문에 반복영역이 한 차례도 실행되지 않을 수 있다.
 
-- do~while문
+- do-while문
 <pre>
 do {
     반복영역
 } while(반복조건)
 </pre>
 
-차이점이 보이는가. do~while은 먼저 1번을 실행한후 그이후에 조건을 검사하고 다시 반복하는것이다...
+차이점이 보이는가. do-while은 먼저 1번을 실행한후 그이후에 조건을 검사하고 다시 반복하는것이다...
 
 반복영역 실행 -> 반복조건 검사 -> true면 반복영역 실행 -> 반복조건 검사 -> true면....
 
