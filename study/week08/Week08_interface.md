@@ -175,7 +175,7 @@ private 이건 동일한 class 내부에서만 접근이 가능하도록 하였�
 
 외부에서 접근을 적절하게 막고자 private를 만든다 아닌가 싶다..
 
-![Alt text](./img/private2.PNG)
+![Alt text](./img/result2.PNG)
 
 현재도 업무가 1.6 1.7이 아직 주를 이루고... 최근들어 1.8 Java로 개발을 하고 있다.
 
