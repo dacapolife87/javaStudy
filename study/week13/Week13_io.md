@@ -198,7 +198,7 @@ public class FileReaderExample {
 
 - OS에서 관리하는 커널 버퍼에 직접 접근불가
 
-![Alt text](./img/slowio.PNG)
+![Alt text](./img/slowio.png)
 
 - 디스크에서 파일 읽는 과정
 1. JVM이 파일을 읽기 위해 kernel에 명령 전달
