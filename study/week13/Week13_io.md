@@ -17,12 +17,18 @@
 
 ### 스트림 (Stream) / 버퍼 (Buffer) / 채널 (Channel) 기반의 I/O
 
+- stream
+> 스트림이란 프로그램과 I/O 객체를 연결하여 데이터를 송수신 하는 길을 말한다.
+> InputStream은 데이터를 읽어 들이는 객체이고, OutputStream은 데이터를 써서보내는 객체이다.
+
 - Buffer
 > 버퍼를 나타낸다. 기본 데이터 타입에 대한 버퍼가 각각 존재하며 입출력 데이터를 임시로 저장할 때 사용된다.
 
 - Channel
 > 데이터가 통과하는 스트림을 나타낸다. 소켓, 파일, 파이프등 다양한 입출력 스트림에 대한 채널이 존재한다.
 
+
+[출처] <https://victorydntmd.tistory.com/134>
 [출처] <https://javacan.tistory.com/entry/73>
 
 ---
